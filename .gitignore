@@ -1,0 +1,10 @@
+.DS_Store
+*.pyc
+__pycache__/
+__pycache__/*
+.idea/
+.vscode/
+<project_name>/settings/local.py
+logs/
+node_modules/
+venv/

@@ -1,0 +1,45 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+// Include any default variable overrides here (though functions won't be available)
+$custom-colors: (
+  "brand-green": #41d294,
+  "brand-dark": #539076,
+  "brand-light": #ebf8ee,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// Theme Color Overwrites
+// $primary: ;
+// $secondary: ;
+// $success: ;
+// $info: ;
+// $warning: ;
+// $danger: ;
+// $light: ;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+// :root {
+//   --bs-body-font-family: 'rockwell',
+//     system-ui,
+//     -apple-system,
+//     "Segoe UI",
+//     Roboto,
+//     "Helvetica Neue",
+//     "Noto Sans",
+//     "Liberation Sans",
+//     Arial,
+//     sans-serif,
+//     "Apple Color Emoji",
+//     "Segoe UI Emoji",
+//     "Segoe UI Symbol",
+//     "Noto Color Emoji";
+// }
