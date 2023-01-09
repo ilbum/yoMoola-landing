@@ -134,12 +134,29 @@
 
 <body>
   <!-- nav -->
-  <nav>
-    <!-- TODO -->
+  <nav class="bg-brand-green">
+    <div class="container text-light col-xxl-8">
+      <div class="navbar navbar-expand-lg d-flex flex-wrap justify-content-between py-3">
+        <span class="fs-4 fw-bold" style="line-height: 1.3rem;;">YO<br>MOOLA</span>
+        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="bi bi-three-dots-vertical"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <!-- <a href="#header" class="nav-link text-light fw-bold">Home</a> -->
+            <a href="#how-app-works" class="nav-link text-light fw-bold">The App</a>
+            <a href="#wallet-features" class="nav-link text-light fw-bold">Features</a>
+            <a href="#join-movement" class="nav-link text-light fw-bold">Partner</a>
+            <a href="#contact" class="nav-link text-light fw-bold">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </nav>
   <!-- ./nav -->
 
-  <!-- header -->
+  <!-- id:header -->
   <header class="bg-brand-green" id="header">
     <div class="container text-light col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -164,16 +181,18 @@
       </div>
     </div>
   </header>
-  <!-- ./header -->
+  <!-- ./id:header -->
 
   <!-- main -->
   <main>
-    <!-- section -->
-    <section class="pb-2 mb-4" id="how-app-works">
+    <!-- id:how-app-works -->
+    <section class="pb-4 mt-2 mb-4" id="how-app-works">
       <div class="container">
+        <div class="row mb-1"></div>
         <div class="d-flex justify-content-center">
-          <h2 class="text-brand-dark fs-1 fw-bold">How The App Works</h2>
+          <h2 class="text-brand-dark fs-1 fw-bold pt-2">How The App Works</h2>
         </div>
+        <div class="row mb-2"></div>
         <div class="row d-flex justify-content-evenly">
           <div class="col-7 col-md-4 col-xl-3 justify-content-center">
             <img src="img/how-it-works-1.png" alt="" class="img-how-it-works">
@@ -199,14 +218,16 @@
         </div>
       </div>
     </section>
-    <!-- ./section -->
+    <!-- ./id:how-app-works -->
 
-    <!-- section -->
-    <section class="bg-brand-light pb-4" id="wallet-features">
+    <!-- id:wallet-features -->
+    <section class="bg-brand-light pt-2 pb-4" id="wallet-features">
       <div class="container pt-4">
+        <div class="row mb-1"></div>
         <div class="d-flex justify-content-center pt-4">
-          <h2 class="text-brand-dark fs-1 fw-bold">yoMoola Wallet Key Features</h2>
+          <h2 class="text-brand-dark fs-1 fw-bold mt-4">yoMoola Wallet Key Features</h2>
         </div>
+        <div class="row mb-2"></div>
         <div class="row d-flex justify-content-evenly">
           <div class="col-7 col-md-4 col-lg-3">
             <img src="img/features-1.png" alt="" class="img-features">
@@ -238,11 +259,12 @@
             </p>
           </div>
         </div>
+        <div class="row mb-2"></div>
       </div>
     </section>
-    <!-- ./section -->
+    <!-- ./id:wallet-features -->
 
-    <!-- section -->
+    <!-- id:join-movement -->
     <section id="join-movement">
       <div class="container text-light col-xxl-8 px-4 py-5">
         <div class="row align-items-center g-5 py-5">
@@ -273,11 +295,11 @@
         </div>
       </div>
     </section>
-    <!-- ./section -->
+    <!-- ./id:join-movement -->
 
-    <!-- section -->
+    <!-- id:partners-benefits -->
     <section id="partners-benefits">
-      <div class="container">
+      <div class="container py-4">
         <div class="d-flex justify-content-center">
           <h2 class="text-brand-dark fs-1 fw-bold">Partner Benefits</h2>
         </div>
@@ -319,11 +341,12 @@
             </p>
           </div>
         </div>
+        <div class="row mb-4"></div>
       </div>
     </section>
-    <!-- ./section -->
+    <!-- ./id:partners-benefits -->
 
-    <!-- section -->
+    <!-- id:contact -->
     <section class="bg-brand-green" id="contact">
       <div class="container text-light px-4 py-5">
         <div class="row align-items-center g-5 py-4">
@@ -363,7 +386,7 @@
         </div>
       </div>
     </section>
-    <!-- ./section -->
+    <!-- ./id:contact -->
   </main>
   <!-- ./main -->
 
