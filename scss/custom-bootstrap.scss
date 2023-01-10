@@ -26,3 +26,114 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+.brand-input {
+  border: 0;
+  padding: 1rem 2rem;
+  /* font-size: 1.25rem; */
+  color: white !important;
+}
+
+.brand-input:focus {
+  color: white !important;
+}
+
+.brand-input::placeholder {
+  color: white !important;
+}
+
+.brand-input:-ms-input-placeholder {
+  color: white !important;
+}
+
+.img-how-it-works {
+  width: 100%;
+  padding: 1rem;
+}
+
+.img-features {
+  width: 50%;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .img-features {
+    width: 75%;
+  }
+}
+
+@media (min-width: 992px) {
+  .img-features {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-features {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .img-features {
+    width: 75%;
+  }
+}
+
+.img-partner-benefits {
+  width: 60%;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .img-partner-benefits {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .img-partner-benefits {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-partner-benefits {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .img-partner-benefits {
+    width: 65%;
+  }
+}
+
+.img-social-media {
+  width: 3.5rem;
+}
+
+.img-download-button {
+  width: 9rem;
+}
+
+#header {
+  background-image: url("img/background-hero.png"
+    );
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 100%;
+}
+
+#wallet-features {
+  background-image: url("img/background-features.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+}
+
+#join-movement {
+  background-image: url("img/background-join-movement.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
