@@ -110,7 +110,8 @@
     }
 
     #header {
-      background-image: url("img/background-hero.png");
+      background-image: url("img/background-hero.png"
+        );
       background-repeat: no-repeat;
       background-position: bottom right;
       background-size: 100%;
@@ -130,11 +131,11 @@
       background-size: 100% 100%;
     }
 
-    #contact {
-      background-image: url("img/background-contact.png");
+    /* #contact {
+      background-image: url("img/dots-pattern.png");
       background-repeat: repeat;
       background-position: center;
-    }
+    } */
   </style>
 </head>
 
@@ -179,10 +180,10 @@
             Using Digital Assets.
           </p>
           <div class="gap-2 d-flex justify-content-md-start">
-            <a href="#">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#comingSoonModal">
               <img src="img/download-google-play.png" alt="" class="img-download-button">
             </a>
-            <a href="#">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#comingSoonModal">
               <img src="img/download-app-store.png" alt="" class="img-download-button">
             </a>
           </div>
@@ -293,10 +294,10 @@
               The yoMoola Wallet makes it easy to purchase digital assets with a credit or debit card. It features store-specific promotions and rewards for using the app. And, users don't need to hassle with separate tokens for gas fees.
             </p>
             <div class="gap-2 d-flex justify-content-md-start">
-              <a href="#">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#comingSoonModal">
                 <img src="img/download-google-play.png" alt="" class="img-download-button">
               </a>
-              <a href="#">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#comingSoonModal">
                 <img src="img/download-app-store.png" alt="" class="img-download-button">
               </a>
             </div>
@@ -413,6 +414,22 @@
     </div>
   </footer>
   <!-- ./footer -->
+
+  <!-- comingSoonModal -->
+  <div class="modal fade" id="comingSoonModal" tabindex="-1" aria-labelledby="comingSoonModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-brand-dark text-light">
+        <!-- <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="comingSoonModalLabel">Coming Soon!</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div> -->
+        <div class="modal-body">
+          Coming soon, For both <strong>Google Play Store</strong> and <strong>Apple App Store</strong>!
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./comingSoonModal -->
 
   <!-- boostrap-js -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
