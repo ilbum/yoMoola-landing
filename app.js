@@ -10,11 +10,18 @@ function submitToAPI(e) {
     return false;
   }
 
-  var emailRE = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  if (!emailRE.test(email)) {
-    alert('Email Address entered, is not valid');
+  var nameRE = /^\w+/;
+  if (!nameRE.test(fullName)) {
+    alert('Full Name is not valid');
     return false;
   }
+
+  var emailRE = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (!emailRE.test(email)) {
+    alert('Email Address is not valid');
+    return false;
+  }
+
   var data = {
     fullName: fullName,
     email: email,
@@ -32,15 +39,11 @@ function submitToAPI(e) {
     if (xmlhttp.readyState === 4) {
       if (xmlhttp.status === 200) {
         console.log('successful');
-        document.getElementById('contact-form').innerHTML =
-          '<h1>Thank you for your message/feedback<br>our team will get back to you soon!</h1>';
+        document.getElementById('row-contact-form').innerHTML =
+          '<h3 class="text-center">Thank you for your message/feedback<br>our team will get back to you soon!</h3>';
       } else {
         console.log('failed');
       }
     }
   };
-
-  document.getElementById('contact-form').reset();
-  // TODO deactivate send button
-  // TODO CORS on API Gateway
 }

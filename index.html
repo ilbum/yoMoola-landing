@@ -251,28 +251,26 @@
             </p>
           </div>
         </div>
+        <div class="row" id="row-contact-form">
+          <form method="POST" id="contact-form">
+            <div class="row d-flex justify-content-center">
+              <div class="col-12 col-md-10 col-lg-7 px-5 py-4 mb-5 rounded-3 text-light bg-brand-dark">
+                <input name="fullName" type="text" class="form-control my-4 bg-brand-green brand-input fs-5" id="input-contact-full-name" placeholder="Full Name:">
+                <div class="invalid-feedback my-4">
+                  Please enter a full name.
+                </div>
+                <input name="email" type="email" class="form-control my-4 bg-brand-green brand-input fs-5" id="input-contact-email" placeholder="Email:">
+                <div class="invalid-feedback my-4">
+                  Please enter a valid email address.
+                </div>
+                <textarea name="message" class="form-control my-4 bg-brand-green brand-input fs-5" placeholder="Message:" id="input-contact-message" style="height: 200px"></textarea>
 
-        <form method="POST" id="contact-form">
-          <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-10 col-lg-7 px-5 py-4 mb-5 rounded-3 text-light bg-brand-dark">
-              <!-- TODO error handling in HTML is wrong -->
-              <!-- TODO remove default data -->
-              <input name="fullName" type="text" class="form-control my-4 bg-brand-green brand-input fs-5" id="input-contact-full-name" placeholder="Full Name:">
-              <div class="invalid-feedback my-4">
-                Please enter a full name.
+                <div class="d-grid gap-2 my-4">
+                  <input type="submit" onClick="submitToAPI(event)" class="btn btn-light text-brand-dark fs-5 fw-semibold" type="button"></input>
+                </div>
               </div>
-              <input name="email" type="email" class="form-control my-4 bg-brand-green brand-input fs-5" id="input-contact-email" placeholder="Email:">
-              <div class="invalid-feedback my-4">
-                Please enter a valid email address.
-              </div>
-              <textarea name="message" class="form-control my-4 bg-brand-green brand-input fs-5" placeholder="Message:" id="input-contact-message" style="height: 200px"></textarea>
-
-              <div class="d-grid gap-2 my-4">
-                <input type="submit" onClick="submitToAPI(event)" class="btn btn-light text-brand-dark fs-5 fw-semibold" type="button"></input>
-              </div>
-            </div>
-        </form>
-
+          </form>
+        </div>
       </div>
       <div class="row">
         <div class="col text-center">
