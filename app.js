@@ -31,7 +31,7 @@ function submitToAPI(e) {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.open(
     'POST',
-    'https://g76bk8sy89.execute-api.us-west-1.amazonaws.com/Test/send-email '
+    'https://g76bk8sy89.execute-api.us-west-1.amazonaws.com/Production/send-email '
   );
   xmlhttp.setRequestHeader('Content-Type', 'application/json');
   xmlhttp.send(JSON.stringify(data));
@@ -40,7 +40,7 @@ function submitToAPI(e) {
       if (xmlhttp.status === 200) {
         console.log('successful');
         document.getElementById('row-contact-form').innerHTML =
-          '<h3 class="text-center">Thank you for your message/feedback<br>our team will get back to you soon!</h3>';
+          '<h3 class="text-center mb-4 pb-4">Thank you for your message/feedback<br>our team will get back to you soon!</h3>';
       } else {
         console.log('failed');
       }
