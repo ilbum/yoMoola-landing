@@ -10,12 +10,6 @@ function submitToAPI(e) {
     return false;
   }
 
-  var nameRE = /^[A-Z]{1}[a-z]{2,20}[ ]{1}[A-Z]{1}[a-z]{2,20}/;
-  if (!nameRE.test(fullName)) {
-    alert('Name entered, is not valid');
-    return false;
-  }
-
   var emailRE = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if (!emailRE.test(email)) {
     alert('Email Address entered, is not valid');
@@ -27,18 +21,15 @@ function submitToAPI(e) {
     message: message,
   };
 
-  console.log(JSON.stringify(data));
-
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.open(
     'POST',
     'https://g76bk8sy89.execute-api.us-west-1.amazonaws.com/Test/send-email '
   );
   xmlhttp.setRequestHeader('Content-Type', 'application/json');
-  xmlhttp.send(data);
+  xmlhttp.send(JSON.stringify(data));
   xmlhttp.onreadystatechange = function () {
     if (xmlhttp.readyState === 4) {
-      var response = JSON.parse(xmlhttp.responseText);
       if (xmlhttp.status === 200) {
         console.log('successful');
         document.getElementById('contact-form').innerHTML =
