@@ -35,7 +35,7 @@ function submitToAPI(e) {
     'https://g76bk8sy89.execute-api.us-west-1.amazonaws.com/Test/send-email '
   );
   xmlhttp.setRequestHeader('Content-Type', 'application/json');
-  xmlhttp.send(JSON.stringify(data));
+  xmlhttp.send(data);
   xmlhttp.onreadystatechange = function () {
     if (xmlhttp.readyState === 4) {
       var response = JSON.parse(xmlhttp.responseText);
@@ -46,7 +46,6 @@ function submitToAPI(e) {
       } else {
         console.log('failed');
       }
-      console.log(`Response -->\n${response}`);
     }
   };
 
